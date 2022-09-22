@@ -1,0 +1,4 @@
+1. npm install -g express-generator
+2. express --view=ejs express-topupgame
+3. npm i dotenv
+4. npm i mongoose
