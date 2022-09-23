@@ -2,3 +2,4 @@
 2. express --view=ejs express-topupgame
 3. npm i dotenv
 4. npm i mongoose
+5. npm install method-override
