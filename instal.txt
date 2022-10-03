@@ -3,3 +3,6 @@
 3. npm i dotenv
 4. npm i mongoose
 5. npm install method-override
+6. npm i connect-flash
+7. npm i express-session
+8. npm i multer
