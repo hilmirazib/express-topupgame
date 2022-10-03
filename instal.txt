@@ -6,3 +6,4 @@
 6. npm i connect-flash
 7. npm i express-session
 8. npm i multer
+9. npm i bcryptjs

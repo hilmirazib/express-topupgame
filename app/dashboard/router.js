@@ -2,10 +2,9 @@ var express = require('express');
 var router = express.Router();
 const { index } = require('./controller');
 
-/* GET home page. */
-// router.get('/', function  (req, res, next) {
-//   res.render('index', { title: 'Express' });
-// });
+const { isLoginAdmin } = require('../middleware/auth');
+
+router.use(isLoginAdmin);
 router.get('/', index);
 
 module.exports = router;

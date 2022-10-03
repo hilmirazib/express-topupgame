@@ -15,6 +15,8 @@ module.exports = {
             const voucher = await Voucher.find().populate('category').populate('nominals');
 
             res.render('admin/voucher/view_voucher', {
+                name: req.session.user.name,
+                title: 'Halaman Voucher',
                 voucher,
                 alert,
             });
@@ -31,6 +33,8 @@ module.exports = {
             res.render('admin/voucher/create', {
                 category,
                 nominal,
+                name: req.session.user.name,
+                title: 'Halaman tambah voucher',
             });
         } catch (err) {
             req.flash('alertMessage', `${err.message}`);
@@ -107,6 +111,8 @@ module.exports = {
                 voucher,
                 nominal,
                 category,
+                name: req.session.user.name,
+                title: 'Halaman ubah voucher',
             });
         } catch (err) {
             req.flash('alertMessage', `${err.message}`);
