@@ -7,3 +7,5 @@
 7. npm i express-session
 8. npm i multer
 9. npm i bcryptjs
+10. npm i jsonwebtoken
+11. npm i cors
