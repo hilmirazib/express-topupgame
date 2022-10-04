@@ -9,3 +9,4 @@
 9. npm i bcryptjs
 10. npm i jsonwebtoken
 11. npm i cors
+12. npm i env-cmd
